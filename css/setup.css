@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Slab:wght@400;500;600&display=swap');
 
+.visually-hidden {
+    display: none;
+}
+
 .material-symbols-sharp {
     font-variation-settings:
     'FILL' 1,
@@ -11,13 +15,12 @@
 }
 
 html, body {
-    background-color: white;
-    color: black;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Roboto Slab', serif;
-    user-select: none;
 }
 
 ul, li, ol {
@@ -58,18 +61,18 @@ p {
 
 a {
     text-decoration: none;
-    text-decoration-color: black;
+    text-decoration-color: var(--primary-text-color);
     transition: 0.2s;
-    color: black;
+    color: var(--primary-text-color);
 }
 
 button {
     width: 56px;
     height: 24px;
-    background-color: black;
+    background-color: var(--secondary-background-color);
     outline: none;
     border: 0;
-    color: white;
+    color: var(--primary-text-color);
 }
 
 /* header setup */
@@ -79,8 +82,8 @@ header {
     width: 100%;
     flex: 0 0 auto;
     -ms-flex: 0 0 auto;
-    background-color: white;
-    border: solid black 0;
+    background-color: var(--primary-header-color);
+    border: solid var(--primary-border-color) 0;
     border-bottom-width: 1px;
 }
 
@@ -93,7 +96,7 @@ header {
     padding-bottom: 5px;
 }
 
-.header__content-left {
+.header__content--center {
     display: flex;
 }
 
@@ -102,13 +105,14 @@ header {
     height: 20px;
     background-image: url("/assets/images/logos/logo.png");
     transition: 0.2s;
+    filter: var(--logo-filter);
 }
 
 .header-logo:hover {
     filter: invert(52%) sepia(4%) saturate(0%) hue-rotate(268deg) brightness(96%) contrast(91%);
 }
 
-.header__content-right {
+.header__content--right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -116,6 +120,40 @@ header {
     position: absolute;
     right: 0;
 }
+
+.color-picker > fieldset {
+    border: 0;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: .85em;
+    background-color: var(--primary-header-color);
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.color-picker input[type="radio"] {
+    appearance: none;
+    margin: 0;
+    width: 7px;
+    height: 7px;
+    outline: solid var(--radio-color, currentColor) 2px;
+    outline-offset: 2px;
+}
+
+.color-picker input[type="radio"]:checked {
+    background-color: var(--radio-color);
+}
+
+.color-picker input[type="radio"]#light {
+    --radio-color: #ecf0f1;
+}
+
+.color-picker input[type="radio"]#dark {
+    --radio-color: #171717;
+}
+
+/* main setup */
 
 main {
     display: flex;
@@ -151,4 +189,16 @@ img-block {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* area separator */
+
+area-separator {
+    display: flex;
+    border-bottom: solid var(--primary-border-color) 1px;
+    width: 456px;
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-bottom: 5px;
 }

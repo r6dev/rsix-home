@@ -1,0 +1,12 @@
+:root {
+    --primary-header-color: #171717;
+    --primary-text-color: white;
+    --primary-background-color: #1d1d1d;
+    --primary-border-color: white;
+    --secondary-text-color: #ecf0f1;
+    --secondary-background-color: #171717;
+    --secondary-border-color: gray;
+    --hover-text-color: #bdc3c7;
+    --placeholder-image: url("/assets/images/illustrations/noise2.png");
+    --logo-filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+}

@@ -7,17 +7,7 @@ main {
     height: 100%;
     flex-direction: column;
     align-items: stretch;
-    background-color: #efeff4;
-}
-
-.area-separator {
-    display: flex;
-    border-bottom: solid black 1px;
-    width: 456px;
-    color: #2b2b2b;
-    font-size: 12px;
-    text-transform: capitalize;
-    padding-bottom: 5px;
+    background-color: var(--primary-background-color);
 }
 
 /* section 1 */
@@ -27,7 +17,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #efeff4;
+    background-color: var(--primary-background-color);
     padding-top: 35px;
 }
 
@@ -41,22 +31,24 @@ main {
     display: flex;
     width: 456px;
     height: 128px;
-    background-color: white;
+    background-color: var(--secondary-background-color);
 }
 
 .featured__item__wrapper {
     display: flex;
-    border-left: solid black 3px;
     width: 100%;
     height: 100%;
 }
 
 .featured__item__img {
-    background-image: url("/assets/images/illustrations/noise2white.png");
+    background-image: var(--placeholder-image);
     background-size: cover;
     min-width: 60%;
     height: 100%;
-    border-right: solid black 1px;
+    border: solid var(--primary-border-color) 0;
+    border-left-width: 3px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
 }
 
 .featured__item__content {
@@ -82,7 +74,7 @@ main {
 
 .featured__desc {
     font-size: 13px;
-    color: #2b2b2b;
+    color: var(--secondary-text-color);
 }
 
 .featured__item__content__separator {
@@ -99,11 +91,11 @@ main {
 
 .featured__co {
     font-size: 10px;
-    color: #2b2b2b;
+    color: var(--secondary-text-color);
 }
 
 .featured__co:hover {
-    color: black;
+    color: var(--primary-text-color);
 }
 
 /* other list */
@@ -124,13 +116,13 @@ main {
     padding-top: 5px;
     padding-bottom: 5px;
     height: 100%;
-    background-color: white;
-    border-left: solid black 3px;
+    background-color: var(--secondary-background-color);
+    border-left: solid var(--primary-border-color) 3px;
 }
 
 .ol-item__title {
     text-transform: capitalize;
-    color: #2b2b2b;
+    color: var(--secondary-text-color);
     font-size: 12px;
 }
 
@@ -141,7 +133,7 @@ main {
 }
 
 .ol-item__desc:hover {
-    color: gray;
+    color: var(--hover-text-color);
 }
 
 /* section 2 */
@@ -151,7 +143,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #efeff4;
+    background-color: var(--primary-background-color);
     padding-top: 35px;
 }
 
@@ -171,13 +163,13 @@ main {
     padding-top: 5px;
     padding-bottom: 5px;
     height: 100%;
-    background-color: white;
-    border-left: solid black 3px;
+    background-color: var(--secondary-background-color);
+    border-left: solid var(--primary-border-color) 3px;
 }
 
 .sec-2__item__title {
     text-transform: capitalize;
-    color: #2b2b2b;
+    color: var(--secondary-text-color);
     font-size: 12px;
 }
 
@@ -188,5 +180,5 @@ main {
 }
 
 .sec-2__item__desc:hover {
-    color: gray;
+    color: var(--hover-text-color);
 }

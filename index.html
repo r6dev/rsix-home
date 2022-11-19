@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/setup.css" />
+    <link rel="stylesheet" href="/css/themes/dark.css" />
     <link
       rel="shortcut icon"
       href="/assets/images/logos/favicon/favicon.ico"
@@ -16,12 +17,22 @@
     <wrapper>
       <header>
         <div class="header__wrapper">
-          <div class="header__content-left">
+          <div class="header__content--center">
             <a href="/">
               <img-block class="header-logo"></img-block>
             </a>
           </div>
-          <div class="header__content-right"></div>
+          <div class="header__content--right">
+            <form class="color-picker visually-hidden" action="">
+              <fieldset>
+                <legend class="visually-hidden">Color Scheme</legend>
+                <label for="theme" class="visually-hidden">Light theme</label>
+                <input type="radio" name="theme" id="light" checked />
+                <label for="theme" class="visually-hidden">Dark theme</label>
+                <input type="radio" name="theme" id="dark" />
+              </fieldset>
+            </form>
+          </div>
         </div>
       </header>
       <iframe
