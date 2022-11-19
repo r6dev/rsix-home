@@ -89,6 +89,8 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .header__content-left {
@@ -103,7 +105,7 @@ header {
 }
 
 .header-logo:hover {
-    transform: scale(1.1);
+    filter: invert(52%) sepia(4%) saturate(0%) hue-rotate(268deg) brightness(96%) contrast(91%);
 }
 
 .header__content-right {

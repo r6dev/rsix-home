@@ -10,6 +10,16 @@ main {
     background-color: #efeff4;
 }
 
+.area-separator {
+    display: flex;
+    border-bottom: solid black 1px;
+    width: 456px;
+    color: #2b2b2b;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
 /* section 1 */
 
 .sec-1 {
@@ -87,8 +97,13 @@ main {
     flex: 1;
 }
 
-.featured__price {
+.featured__co {
     font-size: 10px;
+    color: #2b2b2b;
+}
+
+.featured__co:hover {
+    color: black;
 }
 
 /* other list */
@@ -99,7 +114,6 @@ main {
 
 .ol-item {
     margin-top: 15px;
-    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -124,4 +138,55 @@ main {
     text-transform: capitalize;
     text-decoration: underline;
     font-weight: 600;
+}
+
+.ol-item__desc:hover {
+    color: gray;
+}
+
+/* section 2 */
+
+.sec-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #efeff4;
+    padding-top: 35px;
+}
+
+.sec-2__list {
+    width: 456px;
+}
+
+.sec-2__item {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.sec-2__item__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+    background-color: white;
+    border-left: solid black 3px;
+}
+
+.sec-2__item__title {
+    text-transform: capitalize;
+    color: #2b2b2b;
+    font-size: 12px;
+}
+
+.sec-2__item__desc {
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.sec-2__item__desc:hover {
+    color: gray;
 }
