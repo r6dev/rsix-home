@@ -5,7 +5,7 @@
 main {
     display: flex;
     height: 100%;
-    flex-direction: column;
+    flex-direction: coalumn;
     align-items: stretch;
     background-color: var(--primary-background-color);
 }
@@ -181,4 +181,135 @@ main {
 
 .sec-2__item__desc:hover {
     color: var(--hover-text-color);
+}
+
+/* section banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+}
+
+.banner__separator {
+    margin-top: 75px;
+    width: 100%;
+}
+
+.banner__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-background-color);
+    height: 100%;
+}
+
+.banner__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 456px;
+}
+
+.info-separator {
+    padding-top: 25px;
+}
+
+.download-separator {
+    border: none;
+}
+
+/* section banner - banner top */
+
+.banner__wrapper__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    transform: translateY(-40px);
+}
+
+.banner__logo {
+    background-color: var(--secondary-background-color);
+    box-shadow: 0 0 0 1px var(--primary-border-color);
+    border: solid var(--secondary-background-color) 1px;
+    width: 80px;
+    height: 80px;
+}
+
+.banner__wrapper__top__info {
+    display: flex;
+    text-transform: capitalize;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.banner__title {
+    font-weight: 600;
+}
+
+.banner__publisher {
+    font-size: 12px;
+}
+
+/* section banner - screenshots */
+
+.banner__screenshots {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__screenshot {
+    width: 456px;
+    margin-bottom: 15px;
+}
+
+/* section banner - description */
+
+.banner__description {
+    font-size: 12px;
+}
+
+/* section banner - download list */
+
+.banner__dwnlist__wrapper {
+    display: flex;
+    width: 456px;
+}
+
+.banner__dwnlist {
+    width: 456px;
+    border: solid black 0;
+    border-top-width: 1px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 1px;
+}
+
+.banner__dwnlist__item {
+    width: 100%;
+}
+
+.banner__dwnlist__item__content {
+    display: flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+    background-color: var(--secondary-background-color);
+}
+
+.banner__dwnlist__item__content:hover {
+    background-color: var(--primary-background-color);
+}
+
+.banner__dwnlist__item__info {
+    margin-right: 12px;
+    text-transform: capitalize;
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.banner__dwnlist__item__info:hover {
+    color: var(--primary-text-color);
 }
