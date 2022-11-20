@@ -278,7 +278,7 @@ main {
 
 .banner__dwnlist {
     width: 456px;
-    border: solid black 0;
+    border: solid var(--primary-border-color) 0;
     border-top-width: 1px;
     border-left-width: 3px;
     border-right-width: 3px;
