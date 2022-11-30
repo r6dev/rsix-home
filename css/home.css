@@ -116,7 +116,6 @@ img.featured__item__img {
 }
 
 .ol-item {
-    margin-top: 15px;
     width: 100%;
 }
 
@@ -352,4 +351,5 @@ img.featured__item__img {
 
 .banner__dwnlist__item__info:hover {
     color: var(--primary-text-color);
+    text-decoration: none;
 }

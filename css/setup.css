@@ -6,6 +6,10 @@
     text-decoration: underline;
 }
 
+.desc-a:hover {
+    text-decoration: none;
+}
+
 .visually-hidden {
     display: none;
 }
