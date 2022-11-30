@@ -38,8 +38,10 @@ main {
     height: 100%;
 }
 
-.featured__item__img {
-    background-image: url("/assets/images/illustrations/GitHub-banner.png");
+img-block.featured__item__img {
+    position: relative;
+    padding-left: 10px;
+    background-color: var(--secondary-background-color);
     background-size: cover;
     min-width: 60%;
     height: 100%;
@@ -47,6 +49,14 @@ main {
     border-left-width: 3px;
     border-right-width: 1px;
     border-bottom-width: 1px;
+}
+
+img.featured__item__img {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
 }
 
 .featured__item__content {
