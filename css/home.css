@@ -41,7 +41,7 @@ main {
 img-block.featured__item__img {
     position: relative;
     padding-left: 10px;
-    background-color: var(--secondary-background-color);
+    background-color: var(--primary-background-color);
     background-size: cover;
     min-width: 60%;
     height: 100%;
@@ -57,6 +57,7 @@ img.featured__item__img {
     position: absolute;
     bottom: 5px;
     left: 5px;
+    filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
 }
 
 .featured__item__content {
