@@ -92,13 +92,6 @@ img.featured__item__img {
     margin-bottom: 5px;
 }
 
-.featured__item__content__sec-2 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    flex: 1;
-}
-
 .featured__co {
     visibility: hidden;
     text-decoration: underline;
