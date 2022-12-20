@@ -18,9 +18,9 @@
     font-variation-settings:
     'FILL' 1,
     'wght' 500,
-    'GRAD' -25,
-    'opsz' 24
-}
+    'GRAD' 0,
+    'opsz' 48
+  }
 
 html, body {
     background-color: var(--secondary-background-color);
@@ -92,7 +92,7 @@ header {
     width: 100%;
     flex: 0 0 auto;
     -ms-flex: 0 0 auto;
-    background-color: var(--primary-header-color);
+    background-color: var(--primary-background-color);
     border: solid var(--primary-border-color) 0;
     border-bottom-width: 1px;
     justify-content: center;
@@ -129,8 +129,8 @@ header {
 }
 
 .nav__item {
-    font-size: 16px;
-    padding-left: 12px;
+    font-size: 17px;
+    margin-left: 15px;
     font-weight: 500;
     text-transform: capitalize;
 }
