@@ -94,7 +94,6 @@ header {
     -ms-flex: 0 0 auto;
     background-color: var(--primary-background-color);
     border: solid var(--primary-border-color) 0;
-    border-bottom-width: 1px;
     justify-content: center;
 }
 
