@@ -313,8 +313,8 @@ img.featured__item__img {
 
 .banner__dwnlist {
     width: 668px;
-    border: solid var(--primary-border-color) 1px;
-    border-bottom-width: 0;
+    border: solid var(--primary-border-color) 0px;
+    border-width: 1px 3px 0px 3px;
 }
 
 .banner__dwnlist__item {
