@@ -16,7 +16,7 @@ main.main-home {
     align-items: center;
     justify-content: flex-start;
     background-color: var(--secondary-background-color);
-    padding-top: 7em;
+    padding-top: 6em;
 }
 
 /* featured */
