@@ -1,7 +1,0 @@
-/* main setup */
-main.main-home {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: var(--primary-background-color);
-}

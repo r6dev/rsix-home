@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/setup.css" />
     <link rel="stylesheet" href="/css/themes/default.css" />
-    <link rel="stylesheet" href="/css/host.css" />
+    <link rel="stylesheet" href="/css/home.css" />
     <link
       rel="shortcut icon"
       href="/assets/images/logos/favicon/favicon.ico"
@@ -36,7 +36,7 @@
               <a href="https://cms.rsix.cf/" target="_blank" class="nav__item"
                 >CMS</a
               >
-              <a href="https://info.rsix.cf" class="nav__item">News</a>
+              <a href="https://info.rsix.cf" class="nav__item">Updates</a>
             </div>
           </div>
           <div class="header__content--right">
@@ -53,7 +53,24 @@
         </div>
       </header>
       <main class="main-home" id="home-main">
-        <section class="sec-1"></section>
+        <section class="sec--1">
+          <div class="sec--1__wrapper">
+            <h1 class="sec-title">Who is RSIX?</h1>
+            <p class="sec-description" id="user-desc">[ME]</p>
+            <area-separator class="sec-separator--1"
+              >Recent releases</area-separator
+            >
+            <ul class="projects" id="projects-list">
+              <li class="project">
+                <article class="project-article">
+                  <div class="project-info">
+                    <a href="" class="project-title">TestProject</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="footer__wrapper">
@@ -83,5 +100,6 @@
         </div>
       </footer>
     </wrapper>
+    <script type="module" src="/scripts/js/list-projects.js"></script>
   </body>
 </html>
