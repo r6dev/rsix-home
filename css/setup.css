@@ -91,29 +91,27 @@ header {
   flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   background-color: var(--secondary-background-color);
-  border: solid var(--primary-border-color) 0;
-  border-bottom-width: 1px;
-  justify-content: flex-start;
 }
 
 .header__wrapper {
   display: flex;
-  width: 668px;
+  width: 100%;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .header__content--center {
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 14px;
-  padding-left: 36px;
+  padding: 12px;
 }
 
 .header-logo {
   display: flex;
-  width: 32px;
-  height: 32px;
-  background-image: url("/assets/images/logos/favicon/favicon.ico");
+  width: 64px;
+  height: 16px;
+  background-image: url("/assets/images/logos/logo.png");
   transition: 0.2s;
   filter: var(--logo-filter);
 }
@@ -126,7 +124,7 @@ header {
 .nav {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .nav__item {
@@ -138,47 +136,6 @@ header {
 
 .nav__item:hover {
   color: gray;
-}
-
-.header__content--right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 10px;
-  position: absolute;
-  right: 0;
-}
-
-.color-picker > fieldset {
-  border: 0;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  gap: 0.85em;
-  background-color: var(--primary-header-color);
-  width: fit-content;
-  margin-inline: auto;
-}
-
-.color-picker input[type="radio"] {
-  appearance: none;
-  margin: 0;
-  width: 7px;
-  height: 7px;
-  outline: solid var(--radio-color, currentColor) 2px;
-  outline-offset: 2px;
-}
-
-.color-picker input[type="radio"]:checked {
-  background-color: var(--radio-color);
-}
-
-.color-picker input[type="radio"]#light {
-  --radio-color: #ecf0f1;
-}
-
-.color-picker input[type="radio"]#dark {
-  --radio-color: #171717;
 }
 
 /* footer setup */

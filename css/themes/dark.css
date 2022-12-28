@@ -1,11 +1,12 @@
 :root {
-    --primary-text-color: white;
-    --primary-background-color: #171717;
-    --primary-border-color: white;
-    --secondary-text-color: #ecf0f1;
-    --secondary-background-color: #1d1d1d;
-    --secondary-border-color: gray;
-    --hover-text-color: #bdc3c7;
-    --placeholder-image: url("/assets/images/illustrations/noise2.png");
-    --logo-filter: invert(100%) sepia(13%) saturate(1%) hue-rotate(53deg) brightness(105%) contrast(101%);;
+  --primary-text-color: white;
+  --primary-background-color: #171717;
+  --primary-border-color: white;
+  --secondary-text-color: #ecf0f1;
+  --secondary-background-color: #1d1d1d;
+  --secondary-border-color: gray;
+  --hover-text-color: #bdc3c7;
+  --placeholder-image: url("/assets/images/illustrations/noise2.png");
+  --logo-filter: invert(100%) sepia(13%) saturate(1%) hue-rotate(53deg)
+    brightness(105%) contrast(101%);
 }
