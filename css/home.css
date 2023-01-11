@@ -3,42 +3,68 @@
 main.main-home {
   display: flex;
   flex-direction: column;
+  width: auto;
   height: 100%;
   align-items: stretch;
   background-color: var(--primary-background-color);
+  padding-top: 17em;
 }
 
-/* section 1 */
+/* section setup */
 
-.sec--1 {
+.sec-wrapper {
   display: flex;
-  padding-top: 5.5em;
+  width: 100%;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 }
 
-.sec--1__wrapper {
+.sec-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  border-left: solid var(--primary-border-color) 3px;
+  padding: 2em 2.5em 2em 2.5em;
 }
 
 .sec-title {
-  font-size: 72px;
+  font-size: 48px;
   line-height: 76px;
   font-weight: 800;
   line-height: 48px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   text-transform: capitalize;
-  text-align: center;
+  letter-spacing: 1.5px;
+  color: var(--primary-text-color);
+  transition: 0.2s;
+}
+
+.sec-title:hover {
+  filter: var(--logo-filter);
+}
+
+.sec-title > em {
+  font-style: normal;
+  color: var(--secondary-text-color);
+  transition: 0.15s;
+}
+
+.sec-title__em--1 {
+  background-color: white;
+}
+
+.sec-title__em--1:hover {
+  background-color: transparent;
 }
 
 .sec-description {
-  font-size: 24px;
+  font-size: 19px;
   line-height: 32px;
-  color: var(--secondary-text-color);
-  text-align: center;
+  color: var(--hover-text-color);
+  transition: 0.15s;
+}
+
+.sec-description:hover {
+  color: var(--primary-text-color);
 }
 
 .sec-separator--1 {
@@ -46,5 +72,44 @@ main.main-home {
   font-weight: 600;
   font-size: 24px !important;
   margin-top: 2.7em;
-  border-color: var(--secondary-border-color);
+  border: none;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 1.5px;
+  color: var(--hover-text-color);
+  transition: 0.15s;
+}
+
+.sec-separator--1:hover {
+  text-decoration: underline;
+  color: var(--primary-text-color);
+}
+
+/* section 1 */
+
+.sec--1 {
+  display: flex;
+  width: auto;
+  margin-bottom: 5em;
+}
+
+/* flex */
+
+@media only screen and (max-width: 1024px) {
+  .sec-content {
+    padding-left: 15px;
+    padding-right: 10px;
+    border-left-width: 1px;
+  }
+
+  .sec-title {
+    font-size: 32px;
+  }
+
+  .sec-description {
+    font-size: 16px;
+  }
+
+  .sec-separator {
+    font-size: 19px;
+  }
 }
