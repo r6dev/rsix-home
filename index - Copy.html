@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/setup.css" />
+    <link rel="stylesheet" href="/css/akira.css" />
     <link rel="stylesheet" href="/css/themes/default.css" />
     <link rel="stylesheet" href="/css/home.css" />
     <link
@@ -20,13 +21,39 @@
   </head>
   <body>
     <wrapper>
-      <!--#neat-inject file="/includes/header.html"-->
+      <header>
+        <div class="header__wrapper wrapper">
+          <a href="/">
+            <span class="logo-text">RSIX</span>
+          </a>
+          <div class="nav">
+            <a
+              href="https://go.rsix.cf/github"
+              target="_blank"
+              class="nav__item"
+              >GitHub</a
+            >
+            <a href="https://cms.rsix.cf/" target="_blank" class="nav__item"
+              >CMS</a
+            >
+            <a href="https://info.rsix.cf" class="nav__item">Updates</a>
+          </div>
+        </div>
+      </header>
       <main class="main-home" id="home-main">
         <section class="sec--1">
-          <div class="sec--1__wrapper width-default">
-            <div class="sec--1__blob">
-              <h1 class="sec-title">Who is RSIX?</h1>
-              <p class="sec-description" id="user-desc">[ME]</p>
+          <div class="sec-wrapper wrapper">
+            <div class="sec-content">
+              <h1 class="sec-title">
+                Register<em class="sec-title__em--1">SIX</em>
+              </h1>
+              <p class="sec-description" id="user-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Suscipit sed labore commodi alias placeat nesciunt molestias
+                sequi amet nihil voluptatum sapiente tenetur deleniti dolor,
+                aliquam veniam eligendi ipsum illum iste minima ullam magnam est
+                quibusdam. Minus delectus unde veniam natus.
+              </p>
               <area-separator class="sec-separator--1"
                 >Recent releases</area-separator
               >
@@ -44,7 +71,7 @@
         </section>
       </main>
       <footer>
-        <div class="footer__wrapper width-default">
+        <div class="footer__wrapper wrapper">
           <div class="footer__blob">
             <span class="footer__blob__title">Sites</span>
             <div class="footer__blob__content">
@@ -63,7 +90,7 @@
             </div>
           </div>
           <div class="end-blob">
-            <img-block class="end-blob__img"></img-block>
+            <span class="logo-text end-blob__logo">R6</span>
             <a class="end-blob__item" href="mailto:admin@rsix.cf">email</a>
           </div>
         </div>

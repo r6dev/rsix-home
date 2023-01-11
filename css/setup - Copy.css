@@ -1,11 +1,11 @@
 /* basic setup */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap");
 
 @font-face {
-  font-family: "akira_expandedsuper_bold";
-  src: url("akira-webfont.woff2") format("woff2"),
-    url("akira-webfont.woff") format("woff");
+  font-family: "akira";
+  src: url("woff/akira_expanded_demo-webfont.woff2") format("woff2"),
+    url("woff/akira_expanded_demo-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +33,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace, "Poppins", sans-serif;
+  user-select: none;
 }
 
 ul,
@@ -98,34 +99,33 @@ header {
   width: 100%;
   flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  background-color: var(--header-background-color);
+  background-color: var(--primary-background-color);
   justify-content: center;
 }
 
 .header__wrapper {
   display: flex;
   align-items: center;
-  height: 48px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: solid var(--primary-border-color) 1px;
 }
 
-.header-logo {
-  display: flex;
-  width: 64px;
-  height: 36px;
-  background-image: url("/assets/images/logos/logo.png");
-  transition: 0.2s;
-  filter: var(--logo-filter);
+.logo-text {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: var(--hover-text-color);
+  font-family: "Roboto", monospace;
+  transition: 0.15s;
 }
 
-.header-logo:hover {
-  filter: invert(52%) sepia(4%) saturate(0%) hue-rotate(268deg) brightness(96%)
-    contrast(91%);
+.logo-text:hover {
+  color: var(--primary-text-color);
+  text-decoration: underline;
 }
 
 .nav {
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: flex-start;
   padding-left: 36px;
@@ -137,7 +137,7 @@ header {
   margin-left: 20px;
   font-weight: 500;
   text-transform: capitalize;
-  color: var(--header-text-color);
+  color: var(--primary-text-color);
 }
 
 .nav__item:hover {
@@ -151,17 +151,19 @@ footer {
   width: 100%;
   flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  background-color: var(--footer-background-color);
-  border: solid var(--primary-border-color) 0;
-  border-top-width: 1px;
+  background-color: var(--primary-background-color);
   justify-content: center;
-  padding-top: 4em;
-  padding-bottom: 4em;
 }
 
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+  border: solid var(--primary-border-color) 0;
+  border-top-width: 0px;
+  padding-left: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: solid var(--primary-border-color) 1px;
 }
 
 .footer__blob {
@@ -181,18 +183,20 @@ footer {
 .footer__blob__title {
   font-size: 12px;
   margin-bottom: 5px;
-  color: var(--secondary-text-color);
+  margin-top: 5px;
+  color: var(--primary-text-color);
 }
 
 .footer__blob__item {
   font-size: 16px;
   margin-right: 12px;
   font-weight: 600;
-  color: var(--footer-text-color);
+  color: var(--hover-text-color);
 }
 
 .footer__blob__item:hover {
   text-decoration: underline;
+  color: var(--primary-text-color);
 }
 
 .end-blob {
@@ -214,12 +218,17 @@ footer {
 .end-blob__item {
   font-size: 12px;
   margin-right: 12px;
-  color: var(--secondary-text-color);
+  color: var(--hover-text-color);
 }
 
 .end-blob__item:hover {
   text-decoration: underline;
-  color: var(--footer-text-color);
+  color: var(--primary-text-color);
+}
+
+.end-blob__logo {
+  font-size: 14px;
+  margin-right: 10px;
 }
 
 /* main setup */
@@ -242,6 +251,7 @@ wrapper {
   align-items: stretch;
   width: 100%;
   min-height: 100%;
+  background-color: var(--primary-background-color);
 }
 
 /* page iframe */
@@ -276,6 +286,37 @@ area-separator {
 
 /* other */
 
-.width-default {
-  width: 1376px;
+.wrapper {
+  width: 100%;
+  margin-left: 25em;
+  margin-right: 25em;
+}
+
+/* mobile */
+@media only screen and (max-width: 2150px) {
+  .wrapper {
+    margin-left: 20em;
+    margin-right: 20em;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .wrapper {
+    margin-left: 12em;
+    margin-right: 12em;
+  }
+}
+
+@media only screen and (max-width: 1435px) {
+  .wrapper {
+    margin-left: 9em;
+    margin-right: 9em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
