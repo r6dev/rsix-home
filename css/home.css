@@ -40,6 +40,7 @@ main.main-home {
 
 .sec-title:hover {
   filter: var(--logo-filter);
+  transform: translateY(7px);
 }
 
 .sec-title > em {
@@ -65,6 +66,7 @@ main.main-home {
 
 .sec-description:hover {
   color: var(--primary-text-color);
+  transform: translateY(-7px);
 }
 
 .sec-separator--1 {
@@ -82,6 +84,7 @@ main.main-home {
 .sec-separator--1:hover {
   text-decoration: underline;
   color: var(--primary-text-color);
+  transform: translateY(-5px);
 }
 
 /* section 1 */
@@ -90,6 +93,23 @@ main.main-home {
   display: flex;
   width: auto;
   margin-bottom: 5em;
+}
+
+.project-article {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.project-title {
+  display: block;
+  color: var(--primary-text-color);
+  transition: 0.15s;
+}
+
+.project-title:hover {
+  color: var(--hover-text-color);
+  text-decoration: underline;
+  transform: translateX(7px);
 }
 
 /* flex */
