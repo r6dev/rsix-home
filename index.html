@@ -21,61 +21,46 @@
   </head>
   <body>
     <wrapper>
-      <header>
-        <div class="header__wrapper wrapper">
-          <a href="/">
-            <span class="logo-text">RSIX</span>
-          </a>
-          <div class="nav">
-            <a
-              href="https://go.rsix.cf/github"
+      <div class="header--before">
+        <div class="header--before__wrapper wrapper">
+          <span class="logo-text--first"
+            ><a
+              href="https://go.rsix.cf/GitHub"
+              class="logo-text--first"
               target="_blank"
-              class="nav__item"
-              >GitHub</a
-            >
-            <a href="https://cms.rsix.cf/" target="_blank" class="nav__item"
-              >CMS</a
-            >
+              >r6dev</a
+            ></span
+          >
+        </div>
+      </div>
+      <header id="header-element">
+        <div class="header__wrapper wrapper">
+          <a class="logo-text--second" href="/">WWW</a>
+          <div class="nav">
             <a href="https://info.rsix.cf" class="nav__item">Updates</a>
           </div>
         </div>
       </header>
       <main class="main-home" id="home-main">
         <section class="sec--1">
-          <div class="sec-wrapper wrapper">
-            <div class="sec-content">
-              <h1 class="sec-title">
-                Register<em class="sec-title__em--1">SIX</em>
-              </h1>
-              <p class="sec-description" id="user-desc">
-                The developer of Jetson, Neatutils and Rotary: me, aka RSIX. I'm
-                a Java software developer based in Norway. My journey first
-                started at around 10 years old with game development in Unreal
-                Engine using my mom's old Acer laptop (I hate old Acer laptops).
-                My first video game was a poorly FNaF fan game that I almost got
-                sued for, won't bore you with that though. After a while I
-                dropped video game making and started with website development,
-                then game development again, then website development again,
-                then Java development. I finally landed on both web development
-                and Java development at 13, and that's where I've been ever
-                since.
-              </p>
-              <area-separator class="sec-separator--1">Projects</area-separator>
-              <ul class="projects" id="projects-list">
-                <li class="project">
-                  <article class="project-article">
-                    <div class="project-info">
-                      <a
-                        href="https://go.rsix.cf/jetson"
-                        target="_blank"
-                        class="project-title"
-                        >Jetson</a
-                      >
-                    </div>
-                  </article>
-                </li>
-              </ul>
-            </div>
+          <div class="sec-wrapper">
+            <span class="sec--1__announcement"
+              >The <var>majority</var> of RSIX projects are and will always be
+              free. These projects are made for developers, therefore they are
+              open-source, making them easily accessible for any developer by
+              simply visiting the r6dev (RSIX)
+              <a href="https://go.rsix.cf/GitHub" class="desc-a">GitHub</a>.
+            </span>
+          </div>
+        </section>
+        <section class="sec--2">
+          <div class="sec-wrapper">
+            <h1 class="sec-title--1">Majority will be open-source</h1>
+            <pre class="sec-description--1">
+              The reason only a MAJORITY of RSIX projects/products will be
+              open-source, is because more advanced RSIX products, meant more
+              for consumers, might be paid, as a way to support me
+            </pre>
           </div>
         </section>
       </main>
@@ -88,13 +73,24 @@
                 class="footer__blob__item"
                 target="_blank"
                 href="https://info.rsix.cf/"
-                >Info</a
+                >Open-source updates</a
+              >
+            </div>
+          </div>
+          <div class="footer__blob">
+            <span class="footer__blob__title">Socials</span>
+            <div class="footer__blob__content">
+              <a
+                class="footer__blob__item"
+                target="_blank"
+                href="https://go.rsix.cf/GitHub"
+                >GitHub</a
               >
               <a
                 class="footer__blob__item"
                 target="_blank"
-                href="https://cms.rsix.cf/"
-                >CMS</a
+                href="https://go.rsix.cf/YouTube"
+                >YouTube</a
               >
             </div>
           </div>
@@ -105,5 +101,22 @@
         </div>
       </footer>
     </wrapper>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("header-element");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>

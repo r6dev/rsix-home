@@ -1,6 +1,6 @@
 /* basic setup */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@400;600&display=swap");
 
 @font-face {
   font-family: "akira";
@@ -33,8 +33,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Roboto Mono", monospace, "Poppins", sans-serif;
-  user-select: none;
+  font-family: "Poppins", sans-serif;
 }
 
 ul,
@@ -75,6 +74,10 @@ p {
   padding: 0;
 }
 
+pre {
+  font-family: "Poppins";
+}
+
 a {
   text-decoration: none;
   text-decoration-color: var(--primary-text-color);
@@ -93,55 +96,91 @@ button {
 
 /* header setup */
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.header--before {
+  display: flex;
+  border-bottom: solid var(--secondary-border-color) 1px;
+}
+
+.header--before__wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.logo-text--first {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  transition: 0.15s;
+  color: var(--hover-text-color);
+}
+
+.logo-text--first:hover {
+  color: var(--primary-text-color);
+  text-decoration: underline;
+}
+
 header {
   display: flex;
   z-index: 1000 !important;
   width: 100%;
   flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
   justify-content: center;
+  border-bottom: solid var(--primary-border-color) 1px;
 }
 
 .header__wrapper {
   display: flex;
-  align-items: center;
-  padding-top: 15px;
+  width: 100%;
+  align-items: flex-start;
+  padding-top: 17px;
   padding-bottom: 15px;
-  border-bottom: solid var(--primary-border-color) 1px;
 }
 
-.logo-text {
-  font-size: 16px;
+.logo-text--second {
+  font-size: 12px;
+  margin-right: 40px;
   letter-spacing: 1.5px;
-  color: var(--hover-text-color);
-  font-family: "Roboto", monospace;
+  color: var(--primary-text-color);
+  font-family: "akira";
   transition: 0.15s;
 }
 
-.logo-text:hover {
-  color: var(--primary-text-color);
+.logo-text--second:hover {
+  color: var(--hover-text-color);
   text-decoration: underline;
 }
 
 .nav {
-  display: none;
+  display: flex;
   width: 100%;
+  padding-left: 20px;
+  border-left: solid black 1px;
   justify-content: flex-start;
-  padding-left: 36px;
   align-items: center;
 }
 
 .nav__item {
   font-size: 14px;
+  font-family: "akira";
   margin-left: 20px;
   font-weight: 500;
   text-transform: capitalize;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .nav__item:hover {
-  color: var(--hover-text-color);
+  color: var(--primary-text-color);
+  text-decoration: underline;
 }
 
 /* footer setup */
@@ -151,8 +190,9 @@ footer {
   width: 100%;
   flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
   justify-content: center;
+  border-top: solid var(--primary-border-color) 1px;
 }
 
 .footer__wrapper {
@@ -163,7 +203,6 @@ footer {
   padding-left: 10px;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: solid var(--primary-border-color) 1px;
 }
 
 .footer__blob {
@@ -288,8 +327,8 @@ area-separator {
 
 .wrapper {
   width: 100%;
-  margin-left: 25em;
-  margin-right: 25em;
+  margin-left: 27em;
+  margin-right: 27em;
 }
 
 /* mobile */
@@ -307,16 +346,20 @@ area-separator {
   }
 }
 
-@media only screen and (max-width: 1435px) {
+@media only screen and (max-width: 1024px) {
   .wrapper {
-    margin-left: 9em;
-    margin-right: 9em;
+    margin-left: 48px;
+    margin-right: 48px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 512px) {
   .wrapper {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .nav {
+    display: none;
   }
 }
